@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernd Huber</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Common clean sans-serif */
+            line-height: 1.65;
+            margin: 0 auto;
+            padding: 20px 15px 40px 15px;
+            background-color: #fff;
+            color: #222; /* Slightly darker text for better contrast */
+            max-width: 45em; /* Similar to Yoon Kim's text block width */
+            font-size: 100%; /* Base font size, 1em = 16px typically */
+        }
+
+        .container {
+            /* Container div is mainly for semantic grouping if needed, body handles layout */
+        }
+
+        header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eaeaea; /* Very light separator */
+        }
+
+        .profile-photo {
+            width: 150px; /* Smaller, more discreet photo */
+            height: 150px;
+            border-radius: 3px; /* Subtle rounding */
+            margin-right: 20px;
+            object-fit: cover;
+            margin-top: 20px; /* Align better with first line of text */
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        header h1 {
+            font-family: 'Georgia', 'Times New Roman', Times, serif; /* Serif for name */
+            font-size: 2.2em; /* Prominent name */
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        header .affiliation, header .phd-info {
+            font-size: 0.95em; /* Slightly smaller than body text */
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        
+        header .phd-info {
+            font-size: 0.9em;
+            color: #444;
+        }
+
+        header .phd-info a, header .contact-links a {
+            color: #0066cc; /* Standard accessible blue */
+            text-decoration: none;
+        }
+        header .phd-info a:hover, header .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        header .contact-links {
+            margin-top: 12px;
+            font-size: 0.85em; /* Smaller contact links */
+            line-height: 1.7; 
+        }
+        
+        header .contact-links a {
+            margin-right: 2px; /* Minimal space before separator */
+        }
+
+        header .contact-links .separator {
+            color: #888;
+            margin: 0 4px;
+        }
+
+        section#about {
+            margin-top: 30px; /* Space after header */
+            margin-bottom: 30px;
+        }
+
+        section#about p {
+            font-size: 0.95em; /* Slightly smaller body text, like Yoon Kim's */
+            color: #222;
+            text-align: left;
+            margin-bottom: 1.2em; /* Paragraph spacing */
+        }
+        section#about p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 15px;
+            /* No border for footer to keep it minimal */
+            font-size: 0.8em;
+            color: #888; /* Lighter grey for footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="bhb.jpeg" alt="Photo of Bernd Huber" class="profile-photo">
+            <div class="header-text">
+                <h1>Bernd Huber</h1>
+                <p class="affiliation">Senior Research Scientist, Spotify</p>
+                <p class="phd-info">PhD, Harvard University <br>
+                   (Advisors: <a href="https://kgajos.seas.harvard.edu/">Krzysztof Gajos</a> and <a href="https://www.eecs.harvard.edu/shieber/">Stuart Shieber</a>)
+                </p>
+                <div class="contact-links">
+                    <a href="https://scholar.google.com/citations?hl=en&user=KSqvHX4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a><span class="separator">&bull;</span>
+                    <a href="https://www.linkedin.com/in/berndbhuber/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="about">
+            <p>In my research I work towards advancing AI that deeply understands and dynamically adapts to nuanced human behavior and language. I focus on developing personalized AI and the ability to learn robustly from complex, evolving interactions. I believe in AI as a powerful collaborator that amplifies human values and life, through intuitiveness, effectiveness, and genuine deep alignment with the human experience.</p>
+        </section>
+    </div>
+</body>
+</html>
