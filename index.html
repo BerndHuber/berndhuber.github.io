@@ -59,7 +59,7 @@
             color: #000;
         }
 
-        header .affiliation, header .phd-info {
+        header .affiliation, header .phd-info, header .location {
             font-size: 0.95em; /* Slightly smaller than body text */
             color: #333;
             margin-top: 0;
@@ -77,6 +77,21 @@
         }
         header .phd-info a:hover, header .contact-links a:hover {
             text-decoration: underline;
+        }
+        header .contact-links .email-link {
+            display: inline-block;
+            height: 1.1em; /* Adjust to match text height */
+            vertical-align: text-bottom;
+        }
+        header .location {
+            font-size: 0.9em;
+            color: #444;
+        }
+        
+        .email-image {
+            height: 1em;
+            vertical-align: middle;
+            margin-right: 2px;
         }
 
         header .contact-links {
@@ -142,10 +157,14 @@
                 <h1>Bernd Huber</h1>
                 <p class="affiliation">Senior Research Scientist, Spotify</p>
                 <p class="phd-info">PhD Computer Science, Harvard University</p>
+                <p class="location">New York City</p>
                 <div class="contact-links">
                     <a href="https://scholar.google.com/citations?hl=en&user=KSqvHX4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a><span class="separator">&bull;</span>
                     <a href="https://www.linkedin.com/in/berndbhuber/" target="_blank">LinkedIn</a><span class="separator">&bull;</span>
-                    <a href="https://x.com/mrhuberb" target="_blank">X</a>
+                    <a href="https://x.com/mrhuberb" target="_blank">X</a><span class="separator">&bull;</span>
+                    <span class="email-link">
+                        <img src="contact-address.png" alt="Email address">
+                    </span>
                 </div>
             </div>
         </header>
