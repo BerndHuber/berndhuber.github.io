@@ -1,0 +1,24 @@
+# Bernd Huber
+
+> AI Research Lead at Spotify. Builds preference learning and LLM post-training systems at 700M+ user scale. PhD from Harvard University.
+
+## What He Does
+Leads the research behind Spotify's AI Playlist and AI DJ — the flagship AI products serving 700M+ users. Develops reward models, Direct Preference Optimization (DPO) frameworks, and agentic AI architectures that learn from every user interaction.
+
+## Production Impact
+- 4% increase in listening time across 700M+ users
+- 70% reduction in erroneous tool calls in production
+- Hybrid reward model + DPO framework powering Spotify's core AI experiences
+
+## Key Research
+- Scalable preference optimization for agentic AI: hybrid RLHF/DPO approach that treats every play, skip, save, and refinement as preference signal. RecSys 2025.
+- Embedding-to-Prefix: parameter-efficient personalization for LLMs using pre-computed user embeddings. Enables foundation model steering without fine-tuning. NeurIPS CCFM 2025.
+
+## Why It Matters
+The through-line is preference learning — building AI systems that continuously align to what individual users actually want, measured by real behavior at scale. This research powers Spotify's flagship AI products at 700M+ user scale.
+
+## Links
+- Website: https://berndhuber.github.io/
+- Google Scholar: https://scholar.google.com/citations?user=KSqvHX4AAAAJ
+- LinkedIn: https://www.linkedin.com/in/berndbhuber/
+- Spotify Research: https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization
