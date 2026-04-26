@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNC41VM0PT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GNC41VM0PT');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essays — Bernd Huber</title>
+    <link rel="icon" href="https://fav.farm/👋" />
+    <meta name="description" content="Essays by Bernd Huber.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #ece6d8;
+            --paper-2: #e3dccc;
+            --ink: #111111;
+            --ink-soft: #2a2a28;
+            --ink-mute: #6b675e;
+            --rule: #c8bfa9;
+        }
+
+        * { box-sizing: border-box; }
+        html, body { background: var(--paper); }
+
+        body {
+            font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            color: var(--ink-soft);
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background:
+              radial-gradient(1200px 600px at 10% 0%, rgba(255,255,255,0.35), transparent 60%),
+              radial-gradient(900px 500px at 100% 100%, rgba(0,0,0,0.04), transparent 60%);
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 72px 40px 96px;
+        }
+
+        nav.top {
+            position: absolute;
+            top: 28px;
+            right: 0;
+            display: flex;
+            gap: 24px;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            z-index: 3;
+        }
+        nav.top a {
+            color: var(--ink);
+            text-decoration: none;
+            padding-bottom: 2px;
+            position: relative;
+        }
+        nav.top a::after {
+            content: "";
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            height: 1px;
+            background: var(--ink);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 180ms ease;
+        }
+        nav.top a:hover::after { transform: scaleX(1); }
+        nav.top a[aria-current="page"]::after { transform: scaleX(1); }
+
+        h1 {
+            font-weight: 500;
+            font-size: clamp(2.2rem, 4.2vw, 2.8rem);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin: 0 0 28px;
+            color: var(--ink);
+        }
+
+        .empty {
+            color: var(--ink-mute);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 640px) {
+            .container { padding: 56px 24px 80px; }
+            nav.top { top: 20px; right: 24px; gap: 18px; font-size: 0.72rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="top">
+            <a href="/">About</a>
+            <a href="/essays.html" aria-current="page">Essays</a>
+        </nav>
+
+        <h1>Essays</h1>
+        <p class="empty">Coming soon.</p>
+    </div>
+</body>
+</html>
