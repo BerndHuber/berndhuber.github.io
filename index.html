@@ -12,25 +12,26 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bernd Huber — AI Research Lead, Spotify | Preference Learning & LLM Post-Training at 700M+ User Scale | Harvard PhD</title>
+    <title>Bernd Huber — Research Scientist, Post-Training & Reward Modeling</title>
     <link rel="icon" href="https://fav.farm/👋" />
     <link rel="canonical" href="https://berndh.com/">
 
-    <meta name="description" content="Bernd Huber leads preference learning and LLM post-training research at Spotify, building the AI systems behind AI Playlist and AI DJ at 700M+ user scale. PhD from Harvard University.">
-    <meta name="keywords" content="Bernd Huber, preference learning, LLM post-training, reward modeling, Direct Preference Optimization, DPO, RLHF, agentic AI, tool-use evaluation, eval-prod gap, foundation models, personalization at scale, Spotify AI, Harvard">
+    <meta name="description" content="Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, tool-use evaluation. PhD from Harvard. Applied in Spotify's AI Playlist and AI DJ.">
+    <meta name="keywords" content="reward modeling, post-training, RLHF, DPO, agentic AI, tool-use evaluation, preference learning, LLM post-training, foundation models, eval-prod gap, Bernd Huber, Harvard">
     <meta name="author" content="Bernd Huber">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Bernd Huber — AI Research Lead, Spotify | Preference Learning at Scale">
-    <meta property="og:description" content="Leads preference learning and LLM post-training at Spotify. Built the reward modeling and DPO systems behind AI Playlist and AI DJ. Harvard PhD.">
-    <meta property="og:url" content="https://berndhuber.github.io/">
+    <meta property="og:title" content="Bernd Huber — Research Scientist, Post-Training & Reward Modeling">
+    <meta property="og:description" content="Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, tool-use evaluation. PhD from Harvard. Applied in Spotify's AI Playlist and AI DJ.">
+    <meta property="og:url" content="https://berndh.com/">
     <meta property="og:type" content="profile">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@mrhuberb">
-    <meta name="twitter:title" content="Bernd Huber — AI Research Lead, Spotify | Preference Learning at Scale">
-    <meta name="twitter:description" content="Leads preference learning and LLM post-training at Spotify. Built the reward modeling and DPO systems behind AI Playlist and AI DJ. Harvard PhD.">
+    <meta name="twitter:url" content="https://berndh.com/">
+    <meta name="twitter:title" content="Bernd Huber — Research Scientist, Post-Training & Reward Modeling">
+    <meta name="twitter:description" content="Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, tool-use evaluation. PhD from Harvard. Applied in Spotify's AI Playlist and AI DJ.">
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -40,23 +41,23 @@
       "mainEntity": {
         "@type": "Person",
         "name": "Bernd Huber",
-        "jobTitle": "AI Research Lead",
+        "jobTitle": "Senior Research Scientist",
         "worksFor": { "@type": "Organization", "name": "Spotify" },
         "alumniOf": { "@type": "CollegeOrUniversity", "name": "Harvard University" },
-        "url": "https://berndhuber.github.io/",
-        "image": "https://berndhuber.github.io/bhb.png",
-        "description": "Leads preference learning and LLM post-training research at Spotify, building AI systems that serve 700M+ users. Developed the reward modeling and DPO framework behind AI Playlist and AI DJ. PhD from Harvard University.",
+        "url": "https://berndh.com/",
+        "image": "https://berndh.com/bhb.png",
+        "description": "Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, and tool-use evaluation. PhD from Harvard University. Applied in Spotify's AI Playlist and AI DJ.",
         "knowsAbout": [
-          "preference learning",
-          "LLM post-training",
           "reward modeling",
-          "Direct Preference Optimization",
+          "post-training",
           "RLHF",
+          "Direct Preference Optimization",
           "agentic AI systems",
           "tool-use evaluation",
-          "eval-prod gap",
+          "LLM post-training",
+          "preference learning",
           "foundation models",
-          "personalization at scale"
+          "eval-prod gap"
         ],
         "sameAs": [
           "https://www.linkedin.com/in/berndbhuber/",
@@ -73,12 +74,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --paper: #ece6d8;
-            --paper-2: #e3dccc;
-            --ink: #111111;
-            --ink-soft: #2a2a28;
-            --ink-mute: #6b675e;
-            --rule: #c8bfa9;
+            --paper: #ffffff;
+            --paper-2: #f6f6f6;
+            --ink: #1a1a1a;
+            --ink-soft: #2a2a2a;
+            --ink-mute: #6b6b6b;
+            --rule: #e5e5e5;
+            --accent: #1d4ed8;
+            --accent-hover: #1e40af;
         }
 
         * { box-sizing: border-box; }
@@ -97,17 +100,6 @@
             text-rendering: optimizeLegibility;
         }
 
-        /* Subtle paper texture via layered radial gradients */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            background:
-              radial-gradient(1200px 600px at 10% 0%, rgba(255,255,255,0.35), transparent 60%),
-              radial-gradient(900px 500px at 100% 100%, rgba(0,0,0,0.04), transparent 60%);
-        }
 
         .container {
             position: relative;
@@ -220,18 +212,20 @@
         }
 
         a {
-            color: var(--ink);
+            color: var(--accent);
             text-decoration: none;
             border-bottom: 1px solid var(--rule);
             transition: border-color 120ms ease, color 120ms ease;
         }
-        a:hover { border-bottom-color: var(--ink); }
+        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
 
         header .contact-links a {
+            color: var(--ink);
             border-bottom: none;
             padding-bottom: 1px;
             position: relative;
         }
+        header .contact-links a:hover { color: var(--ink); }
         header .contact-links a::after {
             content: "";
             position: absolute;
@@ -385,7 +379,7 @@
         </nav>
 
         <header>
-            <img src="bhb.png" alt="Photo of Bernd Huber" class="profile-photo">
+            <img src="bhb.png" alt="Bernd Huber, Research Scientist" class="profile-photo">
             <div class="header-text">
                 <h1>Bernd Huber</h1>
                 <p class="affiliation">Senior Research Scientist, Spotify</p>
@@ -406,10 +400,7 @@
 
         <section id="about">
             <p>
-            I'm a Senior Research Scientist at Spotify, working on preference learning, reward modeling, and DPO/RLHF for agentic LLMs at production scale. My PhD at Harvard focused on dialogue systems.
-            </p>
-            <p>
-            I'm interested in the science of building AI that adapts to individual users. I developed <a href="https://arxiv.org/pdf/2505.17051v1" target="_blank">Embedding-to-Prefix</a> and lead the foundational research powering Spotify's AI experiences, including <a href="https://newsroom.spotify.com/2024-04-07/spotify-premium-users-can-now-turn-any-idea-into-a-personalized-playlist-with-ai-playlist-in-beta/" target="_blank">AI Playlist</a> and <a href="https://newsroom.spotify.com/2025-05-13/dj-voice-requests/" target="_blank">AI DJ</a>.
+            I work on reward modeling, RLHF/DPO, and evaluation for agentic LLM systems. I developed <a href="https://arxiv.org/pdf/2505.17051v1" target="_blank">Embedding-to-Prefix</a> and contribute to the systems behind <a href="https://newsroom.spotify.com/2024-04-07/spotify-premium-users-can-now-turn-any-idea-into-a-personalized-playlist-with-ai-playlist-in-beta/" target="_blank">AI Playlist</a> and <a href="https://newsroom.spotify.com/2025-05-13/dj-voice-requests/" target="_blank">AI DJ</a>. My PhD at Harvard focused on dialogue systems.
             </p>
         </section>
 
@@ -422,13 +413,13 @@
                     <div class="publication-content">
                         <h3>Personalizing Agentic AI to Users' Musical Tastes with Scalable Preference Optimization</h3>
                         <span class="pub-link">
-                            <b><a href="https://berndhuber.github.io/">Bernd Huber</a></b>,
+                            <b>Bernd Huber</b>,
                             <a href="https://www.linkedin.com/in/sebastianpeleato/" target="_blank">Sebastian Peleato</a>,
                             <a href="https://scholar.google.co.uk/citations?user=wAr9G5sAAAAJ" target="_blank">Mounia Lalmas-Roellke</a>,
                             <a href="https://scholar.google.com/citations?user=AIncPrIAAAAJ" target="_blank">Paul N. Bennett</a>
                         </span>
                         <p>
-                            I developed a hybrid approach combining reward models and Direct Preference Optimization (DPO) to create LLM-based agentic systems that continuously learn from user feedback. This method enables AI systems to interpret musical queries, orchestrate tools, and adapt through preference learning, achieving 4% increase in listening time and 70% reduction in erroneous tool calls in production.
+                            I developed a hybrid approach combining reward models and Direct Preference Optimization (DPO) for tool orchestration in LLM-based agentic systems. The method achieved a 70% reduction in erroneous tool calls and a 4% lift in listening time.
                             <br>
                             <span class="pub-link">[<a href="https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization" target="_blank">Spotify Research, 2025</a>]</span>
                         </p>
@@ -440,7 +431,7 @@
                     <div class="publication-content">
                         <h3>Embedding-to-Prefix: Parameter-Efficient Personalization for Pre-Trained Large Language Models</h3>
                         <span class="pub-link">
-                            <b><a href="https://berndhuber.github.io/">Bernd Huber</a></b>,
+                            <b>Bernd Huber</b>,
                             <a href="https://sites.google.com/view/ghazalfazelnia/home" target="_blank">Ghazal Fazelnia</a>,
                             <a href="https://adamian.github.io/" target="_blank">Andreas Damianou</a>,
                             <a href="https://www.linkedin.com/in/sebastianpeleato/" target="_blank">Sebastian Peleato</a>,
@@ -463,7 +454,7 @@
                     <div class="publication-content">
                         <h3>Emotional Dialogue Generation Using Image-Grounded Language Models</h3>
                         <span class="pub-link">
-                            <b><a href="https://berndhuber.github.io/">Bernd Huber</a></b>,
+                            <b>Bernd Huber</b>,
                             <a href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en" target="_blank">Daniel McDuff</a>,
                             <a href="https://scholar.google.com/citations?user=xBvFANIAAAAJ" target="_blank">Chris Brockett</a>,
                             <a href="https://scholar.google.com/citations?user=rs1M7CAAAAAJ&hl=en" target="_blank">Michel Galley</a>,
