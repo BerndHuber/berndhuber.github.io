@@ -1,24 +1,36 @@
 # Bernd Huber
 
-> AI Research Lead at Spotify. Builds preference learning and LLM post-training systems at 700M+ user scale. PhD from Harvard University.
+> Research scientist in New York. Research in audio, language models, and learning from human preference. PhD in Computer Science, Harvard University.
 
-## What He Does
-Leads the research behind Spotify's AI Playlist and AI DJ — the flagship AI products serving 700M+ users. Develops reward models, Direct Preference Optimization (DPO) frameworks, and agentic AI architectures that learn from every user interaction.
+## Selected work
 
-## Production Impact
-- 4% increase in listening time across 700M+ users
-- 70% reduction in erroneous tool calls in production
-- Hybrid reward model + DPO framework powering Spotify's core AI experiences
+- Reward modeling for music agents: developed an approach at Spotify combining reward models and direct preference optimization (DPO). Listening feedback on generated playlists informs optimization of tool-use plans. Production A/B tests reported 70% fewer erroneous tool calls and a 4% increase in listening time.
+  https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization
+- Embedding-to-Prefix (E2P): developed a method mapping existing user embeddings to a single learned soft prefix token for a frozen LLM. E2P was used for long-term personalization in GLIDE, Spotify's generative podcast recommender.
+  https://arxiv.org/abs/2505.17051
+  https://arxiv.org/abs/2603.17540
+- Conversational speech: developed SpecialTime for real-time dialogue-act feedback in parent–child speech, and Meeter for analyzing information sharing and shared understanding in group discussions. Co-authored work on real-time speech emotion recognition on mobile devices.
+  https://doi.org/10.1145/3329189.3329203
+  https://doi.org/10.1145/3359132
+  https://ieeexplore.ieee.org/abstract/document/7344658
+- Image-grounded dialogue generation: with Microsoft Research, developed dialogue models conditioned on visual sentiment, scene features, and facial expressions. Companion work studied facial-expression-grounded dialogue generation.
+  https://doi.org/10.1145/3173574.3173851
+  https://ieeexplore.ieee.org/abstract/document/8373852
 
-## Key Research
-- Scalable preference optimization for agentic AI: hybrid RLHF/DPO approach that treats every play, skip, save, and refinement as preference signal. RecSys 2025.
-- Embedding-to-Prefix: parameter-efficient personalization for LLMs using pre-computed user embeddings. Enables foundation model steering without fine-tuning. NeurIPS CCFM 2025.
+## Other work
 
-## Why It Matters
-The through-line is preference learning — building AI systems that continuously align to what individual users actually want, measured by real behavior at scale. This research powers Spotify's flagship AI products at 700M+ user scale.
+- Co-authored research on data selection for continual adaptation of generative recommenders.
+  https://arxiv.org/abs/2604.07739
+- Developed B-Script at Adobe Research for transcript-based B-roll recommendations; related US Patent 11,049,525.
+  https://doi.org/10.1145/3290605.3300311
+  https://patents.google.com/patent/US11049525B2/en
+- Harvard dissertation: Interactive AI to Support Human-Human Communication.
+  https://dash.harvard.edu/entities/publication/60c725b7-a8cf-4713-91dc-808a6688b717
 
-## Links
-- Website: https://berndhuber.github.io/
+## Profiles
+
+- Website: https://berndh.com/
 - Google Scholar: https://scholar.google.com/citations?user=KSqvHX4AAAAJ
 - LinkedIn: https://www.linkedin.com/in/berndbhuber/
-- Spotify Research: https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization
+- GitHub: https://github.com/BerndHuber
+- X: https://x.com/mrhuberb

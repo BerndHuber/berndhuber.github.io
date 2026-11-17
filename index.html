@@ -1,474 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNC41VM0PT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-GNC41VM0PT');
-    </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bernd Huber — Research Scientist, Post-Training & Reward Modeling</title>
-    <link rel="icon" href="https://fav.farm/👋" />
-    <link rel="canonical" href="https://berndh.com/">
-
-    <meta name="description" content="Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, tool-use evaluation. PhD from Harvard. Applied in Spotify's AI Playlist and AI DJ.">
-    <meta name="keywords" content="reward modeling, post-training, RLHF, DPO, agentic AI, tool-use evaluation, preference learning, LLM post-training, foundation models, eval-prod gap, Bernd Huber, Harvard">
-    <meta name="author" content="Bernd Huber">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Bernd Huber — Research Scientist, Post-Training & Reward Modeling">
-    <meta property="og:description" content="Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, tool-use evaluation. PhD from Harvard. Applied in Spotify's AI Playlist and AI DJ.">
-    <meta property="og:url" content="https://berndh.com/">
-    <meta property="og:type" content="profile">
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@mrhuberb">
-    <meta name="twitter:url" content="https://berndh.com/">
-    <meta name="twitter:title" content="Bernd Huber — Research Scientist, Post-Training & Reward Modeling">
-    <meta name="twitter:description" content="Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, tool-use evaluation. PhD from Harvard. Applied in Spotify's AI Playlist and AI DJ.">
-
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bernd Huber</title>
+  <meta name="description" content="Bernd Huber — research in audio, language models, and learning from human preference. PhD in Computer Science, Harvard University.">
+  <meta name="author" content="Bernd Huber">
+  <link rel="canonical" href="https://berndh.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Bernd Huber">
+  <meta property="og:description" content="Bernd Huber — research in audio, language models, and learning from human preference. PhD in Computer Science, Harvard University.">
+  <meta property="og:url" content="https://berndh.com/">
+  <meta property="og:image" content="https://berndh.com/img/bernd.jpg">
+  <meta property="og:image:alt" content="Bernd Huber">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bernd Huber">
+  <meta name="twitter:description" content="Bernd Huber — research in audio, language models, and learning from human preference. PhD in Computer Science, Harvard University.">
+  <meta name="twitter:image" content="https://berndh.com/img/bernd.jpg">
+  <meta name="twitter:image:alt" content="Bernd Huber">
+  <meta name="twitter:creator" content="@mrhuberb">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfilePage",
+      "url": "https://berndh.com/",
       "mainEntity": {
         "@type": "Person",
         "name": "Bernd Huber",
-        "jobTitle": "Senior Research Scientist",
-        "worksFor": { "@type": "Organization", "name": "Spotify" },
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Harvard University" },
         "url": "https://berndh.com/",
-        "image": "https://berndh.com/bhb.png",
-        "description": "Senior Research Scientist working on post-training and reward modeling for agentic LLM systems — RLHF, DPO, and tool-use evaluation. PhD from Harvard University. Applied in Spotify's AI Playlist and AI DJ.",
-        "knowsAbout": [
-          "reward modeling",
-          "post-training",
-          "RLHF",
-          "Direct Preference Optimization",
-          "agentic AI systems",
-          "tool-use evaluation",
-          "LLM post-training",
-          "preference learning",
-          "foundation models",
-          "eval-prod gap"
-        ],
+        "image": "https://berndh.com/img/bernd.jpg",
+        "jobTitle": "Research scientist",
+        "description": "Research in audio, language models, and learning from human preference. PhD in Computer Science, Harvard University.",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Harvard University"
+        },
         "sameAs": [
-          "https://www.linkedin.com/in/berndbhuber/",
           "https://scholar.google.com/citations?user=KSqvHX4AAAAJ",
-          "https://x.com/mrhuberb",
-          "https://scholar.harvard.edu/bhb",
-          "https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization"
+          "https://www.linkedin.com/in/berndbhuber/",
+          "https://github.com/BerndHuber",
+          "https://x.com/mrhuberb"
         ]
       }
     }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --paper: #ffffff;
-            --paper-2: #f6f6f6;
-            --ink: #1a1a1a;
-            --ink-soft: #2a2a2a;
-            --ink-mute: #6b6b6b;
-            --rule: #e5e5e5;
-            --accent: #1d4ed8;
-            --accent-hover: #1e40af;
-        }
-
-        * { box-sizing: border-box; }
-
-        html, body { background: var(--paper); }
-
-        body {
-            font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-weight: 300;
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            color: var(--ink-soft);
-            font-size: 17px;
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
-        }
-
-
-        .container {
-            position: relative;
-            z-index: 1;
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 72px 40px 96px;
-        }
-
-        nav.top {
-            position: absolute;
-            top: 28px;
-            right: 0;
-            display: flex;
-            gap: 24px;
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            z-index: 3;
-        }
-        nav.top a {
-            color: var(--ink);
-            border-bottom: none;
-            padding-bottom: 2px;
-            position: relative;
-        }
-        nav.top a::after {
-            content: "";
-            position: absolute;
-            left: 0; right: 0; bottom: 0;
-            height: 1px;
-            background: var(--ink);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 180ms ease;
-        }
-        nav.top a:hover::after { transform: scaleX(1); }
-        nav.top a[aria-current="page"]::after { transform: scaleX(1); }
-
-        @media (max-width: 640px) {
-            nav.top { top: 20px; right: 24px; gap: 18px; font-size: 0.72rem; }
-        }
-
-        /* Header */
-        header {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            column-gap: 28px;
-            align-items: start;
-            margin-bottom: 40px;
-        }
-
-        .profile-photo {
-            width: 104px;
-            height: 104px;
-            border-radius: 50%;
-            object-fit: cover;
-            filter: grayscale(100%) contrast(1.05);
-            border: 1px solid var(--ink);
-            padding: 4px;
-            background: var(--paper);
-        }
-
-        .header-text { padding-top: 4px; }
-
-        header h1 {
-            font-weight: 500;
-            font-size: clamp(2.2rem, 4.2vw, 2.8rem);
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            margin: 0 0 14px;
-            color: var(--ink);
-        }
-
-        header .affiliation,
-        header .phd-info,
-        header .location {
-            margin: 0;
-            font-size: 0.95rem;
-            color: var(--ink-soft);
-            line-height: 1.55;
-        }
-        header .affiliation { font-weight: 500; color: var(--ink); }
-        header .phd-info    { color: var(--ink-soft); }
-        header .location    { color: var(--ink-mute); font-size: 0.9rem; }
-
-        header .contact-links {
-            margin-top: 14px;
-            padding-top: 14px;
-            border-top: 1px solid var(--rule);
-            font-size: 0.78rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 0;
-        }
-        header .contact-links .contact-loc {
-            color: var(--ink-soft);
-        }
-        header .contact-links .email-link {
-            display: inline-flex;
-            align-items: center;
-            line-height: 0;
-        }
-        header .contact-links .email-image-inline {
-            height: 0.78rem;
-            vertical-align: middle;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            border-bottom: 1px solid var(--rule);
-            transition: border-color 120ms ease, color 120ms ease;
-        }
-        a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
-
-        header .contact-links a {
-            color: var(--ink);
-            border-bottom: none;
-            padding-bottom: 1px;
-            position: relative;
-        }
-        header .contact-links a:hover { color: var(--ink); }
-        header .contact-links a::after {
-            content: "";
-            position: absolute;
-            left: 0; right: 0; bottom: -2px;
-            height: 1px;
-            background: var(--ink);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 180ms ease;
-        }
-        header .contact-links a:hover::after { transform: scaleX(1); }
-
-        header .contact-links .separator {
-            color: var(--ink-mute);
-            margin: 0 6px;
-        }
-
-        /* Section divider — three small dots */
-        .mark {
-            text-align: center;
-            margin: 48px auto;
-            font-size: 13px;
-            color: var(--ink-mute);
-            letter-spacing: 0.6em;
-            line-height: 1;
-            user-select: none;
-        }
-
-        /* Sections */
-        section {
-            margin: 0;
-        }
-
-        section + section { margin-top: 8px; }
-
-        section h2 {
-            font-weight: 500;
-            font-size: 1.25rem;
-            color: var(--ink);
-            margin: 0 0 24px;
-            letter-spacing: -0.01em;
-        }
-
-        section#about p {
-            font-size: 1.02rem;
-            color: var(--ink-soft);
-            margin: 0 0 1.1em;
-        }
-        section#about p:last-child { margin-bottom: 0; }
-
-        /* News */
-        section#news .publication {
-            margin-bottom: 0;
-            display: block;
-        }
-        section#news p {
-            font-size: 1rem;
-            color: var(--ink-soft);
-            margin: 0;
-        }
-
-        /* Publications */
-        .publication {
-            display: grid;
-            grid-template-columns: 120px 1fr;
-            column-gap: 24px;
-            align-items: start;
-            padding: 28px 0;
-            border-top: 1px solid var(--rule);
-        }
-        section#publications .publication:first-of-type { border-top: 0; padding-top: 0; }
-
-        .publication-image {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-            object-position: center;
-            filter: grayscale(100%) contrast(1.05);
-            mix-blend-mode: multiply;
-            background: transparent;
-            padding: 6px;
-        }
-
-        .featured-in {
-            margin-top: 10px !important;
-            padding: 8px 12px;
-            font-size: 0.82rem !important;
-            color: var(--ink-soft) !important;
-            background: var(--paper-2);
-            border-left: 2px solid var(--ink);
-            line-height: 1.5 !important;
-            display: inline-block;
-        }
-        .featured-in a {
-            color: var(--ink);
-            border-bottom: 1px solid var(--rule);
-        }
-
-        .publication h3 {
-            font-weight: 500;
-            font-size: 1.05rem;
-            line-height: 1.35;
-            color: var(--ink);
-            margin: 0 0 10px;
-            letter-spacing: -0.005em;
-        }
-
-        .publication p {
-            font-size: 0.96rem;
-            color: var(--ink-soft);
-            margin: 8px 0 0;
-            line-height: 1.65;
-        }
-
-        .pub-link {
-            display: block;
-            font-size: 0.88rem;
-            color: var(--ink-mute);
-            margin-top: 4px;
-        }
-        .pub-link b a { font-weight: 500; color: var(--ink); }
-
-        hr.rule {
-            border: 0;
-            height: 1px;
-            background: var(--rule);
-            margin: 0;
-        }
-
-        /* Mobile */
-        @media (max-width: 640px) {
-            .container { padding: 56px 24px 80px; }
-            header {
-                grid-template-columns: 1fr;
-                row-gap: 20px;
-            }
-            .profile-photo { width: 96px; height: 96px; }
-            .publication {
-                grid-template-columns: 92px 1fr;
-                column-gap: 16px;
-            }
-            .publication-image { width: 92px; height: 92px; }
-        }
-    </style>
+  </script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body { color: #252a30; font-size: 1rem; line-height: 1.65; }
+    .container { max-width: 920px; }
+    .page { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    .profile-photo { width: 104px; height: 104px; object-fit: cover; }
+    h1 { font-size: 2rem; font-weight: 600; letter-spacing: -.025em; }
+    h2 { font-size: 1.25rem; font-weight: 600; }
+    h3 { font-size: 1.125rem; font-weight: 600; line-height: 1.4; }
+    h3 a { color: inherit; text-decoration: none; }
+    h3 a:hover { color: var(--bs-link-color); text-decoration: underline; }
+    .contact { display: flex; align-items: center; flex-wrap: wrap; gap: .25rem 1rem; font-size: .875rem; }
+    .email-img { width: auto; height: 1em; vertical-align: -.125em; }
+    .intro { max-width: 49rem; margin-top: 1.75rem; margin-bottom: 2.5rem; font-size: 1.0625rem; }
+    .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+    .section-heading h2 { margin: 0; }
+    .section-heading > a { font-size: .875rem; white-space: nowrap; }
+    .work { padding: 1.75rem 0; border-bottom: 1px solid var(--bs-border-color); }
+    .work p { margin-bottom: .65rem; }
+    .work-side { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 2rem; align-items: center; }
+    .work-links { display: flex; flex-wrap: wrap; gap: .3rem 1rem; margin-top: .65rem; font-size: .875rem; }
+    figure { margin: 0; }
+    .figure-link { display: block; border-radius: .15rem; }
+    .figure-link img { display: block; width: 100%; height: auto; }
+    .figure-link:hover { outline: 1px solid #adb5bd; outline-offset: 5px; }
+    a:focus-visible { outline: 2px solid var(--bs-primary); outline-offset: 4px; }
+    figcaption { margin-top: .6rem; color: var(--bs-secondary-color); font-size: .8125rem; line-height: 1.5; }
+    .figure-wide { max-width: 780px; margin: 1.5rem auto 0; }
+    .figure-wide figcaption { text-align: center; }
+    .further-work { padding-top: 1.75rem; }
+    .further-work p { margin-bottom: .75rem; }
+    @media (max-width: 767.98px) {
+      .page { padding-top: 2rem; padding-bottom: 2rem; }
+      .work-side { grid-template-columns: 1fr; gap: 1.5rem; }
+      .work-side figure { width: min(100%, 330px); margin-inline: auto; }
+      .work-side .figure-dialogue { width: min(100%, 390px); }
+      .intro { margin-top: 1.5rem; margin-bottom: 2rem; }
+    }
+    @media (max-width: 575.98px) {
+      .container { padding-inline: 1.25rem; }
+      .profile-photo { width: 88px; height: 88px; }
+      .work { padding-block: 1.5rem; }
+      .section-heading { flex-wrap: wrap; gap: .25rem 1rem; }
+    }
+    @media print {
+      .page { padding-block: 0; }
+      .work { break-inside: avoid; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="top">
-            <a href="/" aria-current="page">About</a>
-            <a href="/essays.html">Essays</a>
+  <main class="container page">
+    <header class="d-flex flex-column flex-sm-row align-items-sm-center gap-4">
+      <img src="img/bernd.jpg" alt="Bernd Huber" class="profile-photo rounded-circle" width="104" height="104">
+      <div>
+        <h1 class="mb-1">Bernd Huber</h1>
+        <div>Research scientist &middot; New York</div>
+        <div class="text-body-secondary">PhD Computer Science, Harvard University</div>
+        <nav class="contact mt-2" aria-label="Contact and profiles">
+          <a href="mailto:bernd.huber.ai@gmail.com"><img src="img/email.png" alt="bernd.huber.ai@gmail.com" class="email-img" width="215" height="20"></a>
+          <a href="https://scholar.google.com/citations?user=KSqvHX4AAAAJ&amp;sortby=pubdate">Scholar</a>
+          <a href="https://www.linkedin.com/in/berndbhuber/">LinkedIn</a>
+          <a href="https://github.com/BerndHuber">GitHub</a>
+          <a href="https://x.com/mrhuberb">X</a>
         </nav>
+      </div>
+    </header>
 
-        <header>
-            <img src="bhb.png" alt="Bernd Huber, Research Scientist" class="profile-photo">
-            <div class="header-text">
-                <h1>Bernd Huber</h1>
-                <p class="affiliation">Senior Research Scientist, Spotify</p>
-                <p class="phd-info">PhD Computer Science, Harvard University</p>
-                <div class="contact-links">
-                    <span class="contact-loc">New York</span>
-                    <span class="separator">·</span>
-                    <a href="mailto:" class="email-link"><img src="contact-address-transparent.png" alt="email" class="email-image-inline"></a>
-                    <span class="separator">·</span>
-                    <a href="https://scholar.google.com/citations?hl=en&user=KSqvHX4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Scholar</a>
-                    <span class="separator">·</span>
-                    <a href="https://www.linkedin.com/in/berndbhuber/" target="_blank">LinkedIn</a>
-                    <span class="separator">·</span>
-                    <a href="https://x.com/mrhuberb" target="_blank">X</a>
-                </div>
-            </div>
-        </header>
+    <p class="intro">I work on audio, language models, and learning from human preference. My research includes reward modeling and post-training for AI agents, personalized generation, and models of speech and conversation.</p>
 
-        <section id="about">
-            <p>
-            I work on reward modeling, RLHF/DPO, and evaluation for agentic LLM systems. I developed <a href="https://arxiv.org/pdf/2505.17051v1" target="_blank">Embedding-to-Prefix</a> and contribute to the systems behind <a href="https://newsroom.spotify.com/2024-04-07/spotify-premium-users-can-now-turn-any-idea-into-a-personalized-playlist-with-ai-playlist-in-beta/" target="_blank">AI Playlist</a> and <a href="https://newsroom.spotify.com/2025-05-13/dj-voice-requests/" target="_blank">AI DJ</a>. My PhD at Harvard focused on dialogue systems.
-            </p>
-        </section>
+    <section aria-labelledby="selected-work">
+      <div class="section-heading border-bottom pb-2">
+        <h2 id="selected-work">Selected work</h2>
+        <a href="https://scholar.google.com/citations?user=KSqvHX4AAAAJ&amp;sortby=pubdate">All publications</a>
+      </div>
 
-        <div class="mark" aria-hidden="true">• • •</div>
+      <article class="work work-side" aria-labelledby="reward-modeling">
+        <div>
+          <h3 id="reward-modeling"><a href="https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization">Reward modeling for music agents</a></h3>
+          <p>At Spotify, I combined reward modeling with direct preference optimization (DPO) to train music agents from listening feedback. The approach improves tool-use plans using feedback on the playlists they produce. Production A/B tests showed 70% fewer erroneous tool calls and 4% more listening time.</p>
+          <div class="work-links">
+            <a href="https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization">Spotify Research article</a>
+          </div>
+        </div>
+        <figure>
+          <a class="figure-link" href="img/preference-optimization.png" target="_blank" rel="noopener" aria-label="Open the preference optimization diagram at full size">
+            <img src="img/preference-optimization.png" alt="Training loop: generate orchestration plans, score with a reward model, sample preference pairs, and fine-tune with DPO." width="1560" height="1320">
+          </a>
+          <figcaption>Preference optimization from listening feedback.</figcaption>
+        </figure>
+      </article>
 
-        <section id="publications">
-            <h2>Publications</h2>
-                <div class="publication">
-                    <img src="spotify_pref_opt.png" alt="Preference optimization flywheel" class="publication-image">
-                    <div class="publication-content">
-                        <h3>Personalizing Agentic AI to Users' Musical Tastes with Scalable Preference Optimization</h3>
-                        <span class="pub-link">
-                            <b>Bernd Huber</b>,
-                            <a href="https://www.linkedin.com/in/sebastianpeleato/" target="_blank">Sebastian Peleato</a>,
-                            <a href="https://scholar.google.co.uk/citations?user=wAr9G5sAAAAJ" target="_blank">Mounia Lalmas-Roellke</a>,
-                            <a href="https://scholar.google.com/citations?user=AIncPrIAAAAJ" target="_blank">Paul N. Bennett</a>
-                        </span>
-                        <p>
-                            I developed a hybrid approach combining reward models and Direct Preference Optimization (DPO) for tool orchestration in LLM-based agentic systems. The method achieved a 70% reduction in erroneous tool calls and a 4% lift in listening time.
-                            <br>
-                            <span class="pub-link">[<a href="https://research.atspotify.com/2025/9/personalizing-agentic-ai-to-users-musical-tastes-with-scalable-preference-optimization" target="_blank">Spotify Research, 2025</a>]</span>
-                        </p>
-                        <p class="featured-in">Featured in Spotify Q2 2025 earnings call as core AI strategy &nbsp;·&nbsp; <a href="https://seekingalpha.com/article/4812462-spotify-ai-shift-changes-everything#:~:text=This%20feedback%20loop,data%20cumulative%20benefit." target="_blank">summary</a> &nbsp;·&nbsp; <a href="https://open.spotify.com/episode/0G0ZTHSOSJBi6Nk2KHC8hY" target="_blank">audio (10:50)</a></p>
-                    </div>
-                </div>
-                <div class="publication">
-                    <img src="e2p.png" alt="Embedding-to-Prefix visualization" class="publication-image">
-                    <div class="publication-content">
-                        <h3>Embedding-to-Prefix: Parameter-Efficient Personalization for Pre-Trained Large Language Models</h3>
-                        <span class="pub-link">
-                            <b>Bernd Huber</b>,
-                            <a href="https://sites.google.com/view/ghazalfazelnia/home" target="_blank">Ghazal Fazelnia</a>,
-                            <a href="https://adamian.github.io/" target="_blank">Andreas Damianou</a>,
-                            <a href="https://www.linkedin.com/in/sebastianpeleato/" target="_blank">Sebastian Peleato</a>,
-                            <a href="https://scholar.google.com/citations?user=fVwJDucAAAAJ" target="_blank">Max Lefarov</a>,
-                            <a href="https://pchandar.github.io/" target="_blank">Praveen Ravichandran</a>,
-                            <a href="https://www.marcodena.it/" target="_blank">Marco De Nadai</a>,
-                            <a href="https://scholar.google.co.uk/citations?user=wAr9G5sAAAAJ" target="_blank">Mounia Lalmas-Roellke</a>,
-                            <a href="https://scholar.google.com/citations?user=AIncPrIAAAAJ" target="_blank">Paul N. Bennett</a>
-                        </span>
-                        <p>
-                            I developed a novel architecture that enables deep personalization of large language models using pre-computed user embeddings. This method bridges representation learning and generative AI, allowing foundation models to be steered by rich user context without costly fine-tuning. The approach achieves strong personalization while maintaining computational efficiency at scale.
-                            <br>
-                            <span class="pub-link">[<a href="https://arxiv.org/pdf/2505.17051v1" target="_blank">NeurIPS CCFM, 2025</a>]</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="publication">
-                    <img src="igc.png" alt="Multimodal dialogue system" class="publication-image">
-                    <div class="publication-content">
-                        <h3>Emotional Dialogue Generation Using Image-Grounded Language Models</h3>
-                        <span class="pub-link">
-                            <b>Bernd Huber</b>,
-                            <a href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en" target="_blank">Daniel McDuff</a>,
-                            <a href="https://scholar.google.com/citations?user=xBvFANIAAAAJ" target="_blank">Chris Brockett</a>,
-                            <a href="https://scholar.google.com/citations?user=rs1M7CAAAAAJ&hl=en" target="_blank">Michel Galley</a>,
-                            <a href="https://scholar.google.com/citations?user=KbD1YlQAAAAJ&hl=en" target="_blank">Bill Dolan</a>
-                        </span>
-                        <p>
-                            I built a multimodal dialogue system that generates contextually appropriate responses by jointly processing text and visual information. This work established foundational methods for incorporating visual sentiment and scene understanding into conversational AI, demonstrating how computational systems can respond to nuanced, multimodal human inputs.
-                            <br>
-                            <span class="pub-link">[<a href="https://scholar.harvard.edu/files/bhb/files/huber2018chiigc.pdf" target="_blank">CHI, 2018</a>]</span>
-                        </p>
-                    </div>
-                </div>
-        </section>
+      <article class="work" aria-labelledby="embedding-to-prefix">
+        <h3 id="embedding-to-prefix"><a href="https://arxiv.org/abs/2505.17051">Embedding-to-Prefix</a></h3>
+        <p>Embedding-to-Prefix (E2P) maps existing user embeddings to a single learned soft prefix token, personalizing a frozen LLM without updating its weights. I developed the method at Spotify; it was used for long-term personalization in GLIDE, a generative podcast recommender.</p>
+        <div class="work-links">
+          <a href="https://arxiv.org/abs/2505.17051">E2P paper</a>
+          <a href="https://arxiv.org/abs/2603.17540">GLIDE paper</a>
+        </div>
+        <figure class="figure-wide">
+          <a class="figure-link" href="img/embedding-to-prefix.png" target="_blank" rel="noopener" aria-label="Open the Embedding-to-Prefix architecture at full size">
+            <img src="img/embedding-to-prefix.png" alt="A user embedding is projected into one prefix token, which conditions a frozen transformer to generate personalized text." width="1054" height="232" loading="lazy">
+          </a>
+          <figcaption>Personalization through a learned prefix; the language model stays frozen.</figcaption>
+        </figure>
+      </article>
 
-    </div>
+      <article class="work" aria-labelledby="conversational-speech">
+        <h3 id="conversational-speech">Models of conversational speech</h3>
+        <p>I developed SpecialTime and Meeter to analyze spoken conversation. SpecialTime provides real-time feedback on dialogue acts in parent&ndash;child speech. Meeter uses transcription, sentence segmentation, and classification to measure information sharing and shared understanding in group discussions. My speech research also includes real-time emotion recognition on mobile devices.</p>
+        <div class="work-links">
+          <a href="https://doi.org/10.1145/3329189.3329203">SpecialTime paper</a>
+          <a href="https://doi.org/10.1145/3359132">Meeter paper</a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/7344658">Speech emotion paper</a>
+        </div>
+        <figure class="figure-wide">
+          <a class="figure-link" href="img/meeter-pipeline.png" target="_blank" rel="noopener" aria-label="Open the Meeter speech-processing pipeline at full size">
+            <img src="img/meeter-pipeline.png" alt="Meeter processes speech into a transcript and segmented sentences, then extracts word counts, information sharing, shared understanding, and prosodic features." width="1197" height="411" loading="lazy">
+          </a>
+          <figcaption>Meeter&rsquo;s speech-processing pipeline, from the <a href="https://doi.org/10.1145/3359132">paper</a>.</figcaption>
+        </figure>
+      </article>
+
+      <article class="work work-side" aria-labelledby="multimodal-dialogue">
+        <div>
+          <h3 id="multimodal-dialogue"><a href="https://www.microsoft.com/en-us/research/publication/emotional-dialogue-generation-using-image-grounded-language-models/">Image-grounded dialogue generation</a></h3>
+          <p>With Microsoft Research, I developed dialogue models conditioned on visual sentiment, scene features, and facial expressions. Compared with text-only models, image grounding produced more informative, emotional, and specific replies.</p>
+          <div class="work-links">
+            <a href="https://doi.org/10.1145/3173574.3173851">Image-grounded dialogue paper</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8373852">Facial-expression paper</a>
+          </div>
+        </div>
+        <figure class="figure-dialogue">
+          <a class="figure-link" href="img/image-grounded-dialogue.png" target="_blank" rel="noopener" aria-label="Open the image-grounded dialogue architecture at full size">
+            <img src="img/image-grounded-dialogue.png" alt="Dialogue architecture combining text with visual scene, sentiment, and facial-expression features to generate a response." width="704" height="604" loading="lazy">
+          </a>
+          <figcaption>Text and visual features for response generation.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="further-work" aria-labelledby="further-work">
+      <h2 id="further-work" class="mb-3">Other work</h2>
+      <p>I also co-authored work on <a href="https://arxiv.org/abs/2604.07739">data selection for continual adaptation of generative recommenders</a>. At Adobe Research, I developed <a href="https://doi.org/10.1145/3290605.3300311">B-Script</a>, a system for transcript-based B-roll recommendations (<a href="https://patents.google.com/patent/US11049525B2/en">US patent</a>).</p>
+      <p><a href="https://dash.harvard.edu/entities/publication/60c725b7-a8cf-4713-91dc-808a6688b717">PhD thesis</a></p>
+    </section>
+
+  </main>
 </body>
 </html>
